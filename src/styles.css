@@ -12,11 +12,9 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  scroll-behavior: smooth; /* add a smooth scrolling effect */
 }
-/* add a smooth scrolling effect */
-html {
-  scroll-behavior: smooth;
-}
+
 div#main {
   display: flex;
   flex-direction: column;
@@ -125,4 +123,16 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* add a slide In Left animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
