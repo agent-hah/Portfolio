@@ -9,6 +9,7 @@
  */
 
 import React from "react";
+import "../styles.css";
 
 /**
  * Desk image
@@ -56,7 +57,8 @@ const Portfolio = () => {
               height: "90%",
               width: "100%",
               objectFit: "cover",
-              animation: "1s ease-out 0s 1 slideInLeft",
+              /* update the animation so that the animation always runs when you scroll to it */
+              animation: "slideInLeft 1s ease",
             }}
             alt={imageAltText}
           />
